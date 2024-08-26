@@ -13,7 +13,7 @@ pnpm dev
 bun dev
 ```
 secound , run json server 
-json-server --watch _data/db.json --port 8000
+npm run json-server
 
 note 
 iam not handel the remove or update cart because it did not mention in task notes and Due to time constraints 
