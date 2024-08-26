@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "json-server": "json-server _data/db.json --port 8000",
+    "dev-with-json-server": "concurrently \"npm run dev\" \"npm run json-server\""
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.2",
