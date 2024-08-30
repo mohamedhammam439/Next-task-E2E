@@ -1,5 +1,5 @@
 async function getProductDetails(id) {
-  const res = await fetch("http://localhost:8000/products/" + id, {
+  const res = await fetch("https://json-server-e2-e.vercel.app/products/" + id, {
     next: { revalidate: 30 },
   });
   return res.json();
