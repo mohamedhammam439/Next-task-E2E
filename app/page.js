@@ -1,8 +1,8 @@
 import ProductList from "./components/productList";
 
 async function getProductsList() {
-  const res = await fetch("http://localhost:8000/products", {
-    next: { revalidate: 30*30 },
+  const res = await fetch("https://json-server-e2-e.vercel.app/products", {
+    next: { revalidate: 0 },
   });
   return res.json();
 }
